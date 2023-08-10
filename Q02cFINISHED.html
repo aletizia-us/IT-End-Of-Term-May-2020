@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        img{
+            width: 300px;
+            height: auto;
+            display: block;
+        }
+
+        .img-1{
+            position: absolute;
+            left:-500px; top:0px;
+            animation-name: img1;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+        }
+        @keyframes img1 {
+            0%{left:-500px}
+            100%{left:100%}
+        }
+        
+        .img-2{
+            position: absolute;
+            right:-500px; top:0px;
+            animation-name: img2;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+        }
+        @keyframes img2 {
+            0%{right:-500px}
+            100%{right:100%}
+        }
+
+    </style>
+</head>
+<body>
+    <img src="P5choco-squares.jpg" class="img-1" >
+    <img src="P1Chocolate_bkgrnd.jpg" class="img-2" >
+</body>
+</html>

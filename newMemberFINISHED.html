@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Registration</title>
+    <style>
+        label, input[type="submit"]{
+            font-weight: bold;
+            margin: 10px;
+        }
+        h3{
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>New Member Registration</h1>
+
+    <form action="" method="post" onsubmit="return validateForm()">
+
+        <label for="Label">Enter Personal Information</label>
+        
+        <br><br>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="firstname">
+
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lastname">
+
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="text" id="age">
+
+        <br><br>
+
+        <label for="gender">Select Gender</label>
+        <select name="genders" id="genders" id="genders">
+            <option value="void">-select-</option>
+            <option value="nb">Non-Binary</option>
+            <option value="female">Woman/Girl</option>
+            <option value="male">Man/Boy</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" name="Submit" id="submit" value="Submit">
+
+
+    </form>
+
+    <div id="details">
+        <h1>Member details have been saved</h1>
+
+        <h3>First Name:<span></span></h3>
+        <h3>Last Name:<span></span></h3>
+        <h3>Age:<span></span></h3>
+        <h3>Gender:<span></span></h3>
+
+    </div>
+
+
+    <script>
+        function validateForm(){
+
+            let fnameInput = document.getElementById("firstname").value;
+            let lnameInput = document.getElementById("lastname").value;
+            let ageInput = document.getElementById("age").value;
+            let genderInput = document.getElementById("genders").value;
+
+            if(fnameInput == ""){
+                alert("Please enter your first name");
+                return false;
+            }
+            if(lnameInput == ""){
+                alert("Please enter your last name");
+                return false;
+            }
+            if(ageInput < 18){
+                alert("You must be at least 18 to sign in");
+                return false;
+            }
+            
+            return true;
+            
+        }
+        document.getElementsByTagName("span")[0].innerHTML = fnameInput;
+        document.getElementsByTagName("span")[1].innerHTML = lnameInput;
+        document.getElementsByTagName("span")[2].innerHTML = ageInput;
+        document.getElementsByTagName("span")[3].innerHTML = genderInput;
+            
+            
+
+    </script>
+</body>
+</html>

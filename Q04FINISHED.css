@@ -1,0 +1,66 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 900px;
+    display: block;
+    margin: auto;
+}
+header{
+    background-color: #191970;
+    display: column;
+
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top img{width: 80px; padding: 20px;}
+.flex-end{ padding: 20px;}
+p{padding-left: 20px;}
+.brand-name {font-size: 30px; color: #FFFFFF; font-weight: bold; font-style: italic; margin-right: 30px;}
+button {border-radius: 10px; border: 2px solid black; font-size: 18px; background-color: #B22222; color: #FFFFFF; width: 100px; height: 26px;}
+
+
+
+.p1, .p2, .p3 {color: #FFFFFF;}
+.p1{font-size: 35px;}.p2{font-size: 25px;}.p3{font-size: 18px;}
+
+
+article{
+    background-color: #ADD8E6; 
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.item-1, .item-2 {
+    background-color: #F5F5F5; 
+    font-size: 14px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    width: 30%;
+    height: max-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.item-1 img, .item-2 img{
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+.tr-head{
+    background-color: #404040;
+    color: white;
+}
+
+
+
+footer{
+    font-size: 16px;
+    color: white;
+    background-color: #B22222;
+    padding: 10px;
+}
